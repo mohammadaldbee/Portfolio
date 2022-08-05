@@ -1,9 +1,15 @@
 * {
-   
+
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-  font-family:cursive;
+    font-family: cursive;
+    margin: 0;
+
+}
+
+body {
+    caret-color: beige;
 }
 
 header {
@@ -17,7 +23,6 @@ header {
     align-items: center;
     padding-left: 200px;
     padding-right: 200px;
-
 }
 
 .name {
@@ -29,7 +34,7 @@ header {
 
 .name span {
     color: black;
-    background-color: blue;
+    background-color: bisque;
     border-radius: 40px;
 }
 
@@ -37,12 +42,13 @@ header {
     text-decoration: none;
     padding-right: 30px;
     font-weight: 400;
-    
-    
+    color: bisque;
+
 }
 
 .last a:hover {
     color: brown;
+
 }
 
 .main {
@@ -59,11 +65,13 @@ header {
 
 h3,
 h1 {
-    color: whitesmoke;}
-h2{
-    color:blue;
+    color: whitesmoke;
 }
 
+.main h2 {
+    color: beige;
+    margin-bottom: 5px;
+}
 
 .main h1 {
     font-weight: 700;
@@ -74,14 +82,10 @@ h2{
     letter-spacing: 1px;
 }
 
-.main h2 {
-    margin-bottom: 5px;
-}
-
 .main .btn {
     color: aliceblue;
     text-decoration: none;
-    background-color: blue;
+    background-color: black;
     font-size: 1em;
     font-weight: 500;
     padding: .8em;
@@ -90,20 +94,18 @@ h2{
 }
 
 .main .btn:hover {
-    background-color: black;
+    background-color: blue;
 }
 
 .about {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-
     min-height: 700px;
     background-color: blanchedalmond;
 
-
 }
 
-.emy {
+.empty {
     grid-column: 1/3;
 
 }
@@ -111,9 +113,18 @@ h2{
 .about .btn {
     border: none;
     background-color: black;
-    color: aliceblue;
     padding: .5em;
     border-radius: 10px;
+
+}
+
+.about .btn:hover {
+    background-color: blue;
+}
+
+.btn a {
+    text-decoration: none;
+    color: aliceblue;
 
 }
 
@@ -123,7 +134,12 @@ h2{
 
 }
 
-.p {
+.about img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.parg {
     grid-column: 3/7;
     font-size: 1.5rem;
 }
@@ -150,8 +166,6 @@ h2{
     margin: auto;
     min-height: 600px;
     margin-top: 70px;
-
-
 
 }
 
@@ -180,19 +194,16 @@ hr {
     font-size: 2rem;
     font-weight: 500;
 
-
-
 }
 
 .item {
     background-color: blanchedalmond;
     border: 2px solid rgba(137, 43, 226, 0.614);
-    ;
+    box-shadow: 5px 5px 5px grey;
     height: 300px;
     border-radius: 20px;
     margin-top: 50px;
-    box-shadow: 5 10 black;
-
+    box-shadow: 5 5 10 black;
 
 }
 
@@ -204,12 +215,28 @@ hr {
 
 .card img {
     height: 300px;
+    width: 100%;
 }
 
 .card {
     width: 80%;
     margin: auto;
     margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.card-title {
+    padding: 10px;
+}
+
+.card-text {
+    padding: 10px;
+}
+
+.text-muted a {
+    text-decoration: none;
 }
 
 .card:hover {
@@ -217,209 +244,401 @@ hr {
     transform: scale(1.1);
     color: beige
 }
-.item img{
-    border-radius: 10px;
+
+.card img {
+    border-radius: 20px;
 }
 
-.contact{
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns:repeat(5,1fr);
-    width: 90%;
-   
-   min-height: 600px; ;
-   
+.item img {
+    border-radius: 5px;
+
 }
-.fc input{
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    gap: 20px;
+    margin: auto;
+    min-height: 670px;
+
+}
+
+
+.item2 {
+    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px grey;
+    margin-top: 120px;
+    height: 350px;
+
+    background-color: bisque;
+}
+
+.item2:hover {
+    background-color: black;
+    transform: scale(1.1);
+    color: white
+}
+
+.item2 img {
+    border-radius: 20%;
+    height: 140px;
+    width: 80%;
+    background-color: aliceblue;
+    position: relative;
+    top: 15px;
+    left: 35px;
+
+}
+
+.position {
+
+    color: black;
+    position: absolute;
+    top: 7%;
+    left: 45%;
+}
+
+.font {
+    text-align: center;
+    padding: 10px;
+}
+
+.contact {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    min-height: 650px;
+
+}
+
+.input {
+    margin-top: 100px;
+}
+
+.input input {
     padding: 5xp;
-   border: 2px solid blue;
+    border: none;
     border-radius: 5px;
     width: 250px;
     height: 50px;
-    
+    background-color: rgba(128, 128, 128, 0.132);
+
 }
-textarea{
+
+textarea {
     border: 2px solid blue;
     border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.132);
+    border: none;
 }
-.fc h2{
+
+.input h2 {
     margin-left: 25px;
     color: blue;
 }
-.fc button{
+
+.input button {
     padding: 5px;
     background-color: blue;
-    border:none ;
+    border: none;
     border-radius: 10px;
     width: 100px;
+    color: aliceblue;
 }
-.icon {
-    width: 20px;
-    height: 20px;
-    
-    
-}
-.ic{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content:start;
 
-    
+.main-card {
+    padding-top: 80px;
+    text-align: center;
+    color: black
 }
-footer{
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+
+}
+
+.word {
+    margin-top: 100px;
+}
+
+.grid-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
+    margin-top: 100px;
+    width: 20%;
+
+
+
+}
+
+footer {
     width: 100%;
     text-align: center;
     height: 100px;
-    background-color: gray;
+    background-color: black;
     padding: 20px;
+    margin: 0%;
 }
-footer a{
+
+footer a {
     text-decoration: none;
-    
+    color: bisque
 }
-footer p{
+
+footer p {
     font-size: 10px;
+    color: bisque
 }
 
-   
+footer a:hover {
+    color: blue
+}
 
 
-@media (min-width:900px) and (max-width:1200px) {
+
+@media (min-width:600px) and (max-width:1100px) {
     .cont {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
-    } header{
-        padding:0px;
-        display: flex;
-        justify-content:start;
     }
-   
-    .main{
+
+    header {
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 900px;
+        background: url(mo.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+
+    .main h2 {
+        margin-left: 20px;
+    }
+
+    .main h1 {
+        margin-left: 20px;
+    }
+
+    .main h3 {
+        margin-left: 20px;
+    }
+
+    .main .btn {
+        margin-left: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .about img {
+        border-radius: 50%;
+        width: 24rem;
+        height: 24rem;
+        box-shadow: 10px 15px;
+    }
+
+
+    .about {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .parg p {
+        font-size: 24px;
+        padding-left: 10px;
+
+    }
+
+    .empty {
+        grid-column: 0;
+
+    }
+
+    .about div {
+        margin-top: 1em;
+        width: 100%;
+
+    }
+
+    .parg {
+        grid-column: 1/4;
+        font-size: 1.5rem;
+    }
+
+    .main {
         padding: 0px;
         margin: 0px;
     }
-}
 
-
-@media (min-width:600px) and (max-width:899px) {
-    .cont {
+    .services {
         grid-template-columns: 1fr 1fr;
+
     }
-    header{
-        padding:0px;
-        display: flex;
-        justify-content:start;
+
+
+    .position {
+
+        color: black;
+        position: absolute;
+        top: 4%;
+        left: 43%;
     }
-    .about {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    
-        min-height: 900px;
-        background-color: blanchedalmond;
-    
-    
+
+    .word {
+        margin-left: 100px;
     }
-    .main {
-        padding-bottom: 350px;
-        padding-left: 250px;
-        width: 100%;
-        min-height: 900px;
-        display: flex;
-        align-items: center;
-        background: url(mo.jpg);
-        background-size:contain;
-        background-repeat: no-repeat;
-}.name {
-    font-weight: 600;
-    font-size: 1em;
-    text-decoration: none;
-    color: bisque
-}}
+
+    .input input {
+        margin-left: 20px;
+
+    }
+
+    textarea {
+        margin-left: 20px;
+    }
+
+
+
+    .input button {
+        margin-left: 20px;
+    }
+
+}
 
 @media (min-width:200px) and (max-width:599px) {
     .cont {
         grid-template-columns: 1fr;
         width: 80%;
     }
-    header{
-        padding:0px;
-        display: flex;
-        justify-content:start;
-    }
-    .name {
-        font-weight: 600;
-        font-size: 1em;
-        text-decoration: none;
-        color: bisque;
-        padding-right: 15px;
-    }.last a {
-        text-decoration: none;
-        padding-right: 10px;
-        font-weight: 400;
-        font-size: 10px;
-       }
 
- .main {
-    padding-bottom: 0px;
-    padding-left: 30px;
-    width: 100%;
-    min-height: 900px;
-    display: flex;
-    align-items: center;
-    background: url(fre.jpg);
-    background-size:cover;
-    
-    background-repeat: no-repeat;
-    text-align: center;}
+    header {
+
+        padding: 0px;
+        justify-content: space-around;
+    }
+
+    .name {
+        font-size: 1em;
+        padding-right: 15px;
+    }
+
+    .last a {
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .main {
+        padding-bottom: 0px;
+        padding-left: 30px;
+        min-height: 900px;
+        background: url(fre.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
     .about {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    
+        grid-template-columns: repeat(5, 1fr);
         min-height: 700px;
-        background-color: blanchedalmond;
-    
-    
     }
-    
-    .emy {
+
+    .parg p {
+        font-size: 14px;
+        padding-left: 10px;
+
+    }
+
+    .empty {
         grid-column: 0;
-    
+
     }
-    
+
     .about .btn {
-        border: none;
-        background-color: black;
-        color: aliceblue;
-        padding: 0em;
-        border-radius: 10px;
-    
+        padding: 5px;
+        margin-left: 5px;
     }
-    
+
     .about div {
         margin-top: 1em;
         width: 100%;
-    
+
     }
-    
-    .p {
+
+    .services {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .position {
+        position: absolute;
+        top: 2%;
+        left: 32%;
+    }
+
+    .item2 {
+
+        margin-top: 70px;
+        height: 350px;
+    }
+
+    .parg {
         grid-column: 1/4;
         font-size: 1.5rem;
     }
-    
+
     .about img {
         border-radius: 50%;
         width: 13rem;
         height: 13rem;
-        margin-top: px;
-        box-shadow: 10px 20px;
+        box-shadow: 10px 10px;
+        transform: rotate(20deg);
+        padding-left: 5px;
+        grid-template-columns: 4/6;
+
     }
-    .contact{
-        margin-top: 100px;
-        display: grid;
-        grid-template-columns:repeat(3,1fr);
-        width: 90%;
-       
-       min-height: 600px; ;
-       
-    } 
- }
+
+    .contact {
+        grid-template-columns: repeat(3, 1fr);
+        min-height: 600px;
+
+    }
+
+    .input input {
+        margin-left: 10px;
+
+    }
+
+    textarea {
+        margin-left: 10px;
+    }
+
+
+
+    .input button {
+        margin-left: 10px;
+    }
+
+    .word h2 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+   .grid-icons {
+    margin-left: 20px;
+   }
+
+    .study {
+        background-image: linear-gradient(bisque, white, bisque)
+    }
+}
