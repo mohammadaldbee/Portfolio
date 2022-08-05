@@ -642,13 +642,3 @@ footer a:hover {
         background-image: linear-gradient(bisque, white, bisque)
     }
 }
-@media (width:1280px){
-
-    .main {
-        padding-bottom: 350px;
-        padding-left: 100px;
-      
-    }
-    
-
-}
