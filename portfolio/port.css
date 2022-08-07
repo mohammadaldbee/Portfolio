@@ -219,7 +219,7 @@ hr {
 }
 
 .card {
-    width: 80%;
+    width: 40%;
     margin: auto;
     margin-top: 50px;
     border: 1px solid black;
@@ -247,7 +247,7 @@ hr {
 
 .card img {
     border-radius: 20px;
-    object-fit:fill;
+    object-fit:cover;
 }
 
 .item img {
@@ -297,7 +297,7 @@ hr {
 
     color: black;
     position: absolute;
-    top: 7%;
+    top: 9%;
     left: 45%;
    
 }
@@ -517,6 +517,10 @@ footer a:hover {
     .input button {
         margin-left: 20px;
     }
+    .card {
+        width: 70%;
+    }
+
 
 }
 
@@ -637,6 +641,9 @@ footer a:hover {
     .word h2 {
         font-size: 20px;
         margin-left: 20px;
+    }
+    .card {
+        width: 70%;
     }
 
     .grid-icons {
